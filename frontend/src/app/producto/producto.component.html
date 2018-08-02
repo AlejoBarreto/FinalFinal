@@ -1,0 +1,21 @@
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Cantidad</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Categoria</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor= "let producto of productos">
+        <td>{{producto.nombre}}</td>
+        <td>{{producto.cantidad}}</td>
+        <td>{{producto.precio}}</td>
+        <td>{{producto.categoria}}</td>
+        <td><button class="btn btn-danger" (click)="delete(producto)"> Borrar</button></td>
+        </tr>
+      </tbody>
+    </table>
+    

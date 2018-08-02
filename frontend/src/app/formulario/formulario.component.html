@@ -1,0 +1,29 @@
+<div class="col-md-6">
+  <h2 class="text-center">Ingresar Producto</h2>
+<form>
+  <div class="form-group">
+    <label for="nombre">Nombre:</label>
+    <input type="text" [(ngModel)]="user.nombre" placeholder="Nombre" name="email" class="form-control" id="email">
+  </div>
+
+  <div class="form-group">
+    <label for="cantidad"> Cantidad:</label>
+    <input [(ngModel)]="user.cantidad" placeholder="Cantidad" name="firstName" class="form-control" id="firstName">
+  </div>
+
+  <div class="form-group">
+    <label for="Precio">Precio:</label>
+   <input [(ngModel)]="user.precio" placeholder="Precio" name="lastName" class="form-control" id="lastName">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Categoria</label>
+    <select class="form-control" id="categoria" [(ngModel)]="user.categoria" name="categoria">
+      <option>Interior</option>
+      <option>Exterior</option>
+    </select>
+  </div>
+
+  <button class="btn btn-dark" (click)="createUser()">Ingresar</button>
+</form>
+</div>
